@@ -35,8 +35,8 @@ export const projects = [
     },
     githubUrl: null, // Placeholder - do not invent
     liveUrl: null,   // Placeholder
-    accentGradient: "from-indigo-500 via-purple-500 to-pink-500",
-    glowColor: "rgba(99, 102, 241, 0.25)"
+    accentColor: "#f24614",
+    glowColor: "rgba(242, 70, 20, 0.25)"
   },
   {
     id: "insureflow-ai",
@@ -78,8 +78,8 @@ export const projects = [
     },
     githubUrl: null, // Placeholder - do not invent
     liveUrl: null,   // Placeholder
-    accentGradient: "from-blue-500 via-cyan-500 to-emerald-500",
-    glowColor: "rgba(6, 182, 212, 0.25)"
+    accentColor: "#facf16",
+    glowColor: "rgba(250, 207, 22, 0.25)"
   },
   {
     id: "career-adviser",
@@ -112,8 +112,8 @@ export const projects = [
     githubUrl: "https://github.com/KURUTHI062/Career-Adviser-",
     cloneUrl: "https://github.com/KURUTHI062/Career-Adviser-.git",
     liveUrl: null,
-    accentGradient: "from-amber-500 via-orange-500 to-rose-500",
-    glowColor: "rgba(245, 158, 11, 0.2)"
+    accentColor: "#f24614",
+    glowColor: "rgba(242, 70, 20, 0.2)"
   },
   {
     id: "examination-system",
@@ -147,8 +147,8 @@ export const projects = [
     githubUrl: "https://github.com/skyvlfuturesoft/skyvl_college_test.git",
     cloneUrl: "https://github.com/skyvlfuturesoft/skyvl_college_test.git",
     liveUrl: null,
-    accentGradient: "from-violet-500 via-indigo-500 to-sky-500",
-    glowColor: "rgba(139, 92, 246, 0.2)"
+    accentColor: "#facf16",
+    glowColor: "rgba(250, 207, 22, 0.2)"
   },
   {
     id: "personal-portfolio",
@@ -161,28 +161,28 @@ export const projects = [
     description:
       "A responsive personal portfolio website developed using React.js and Vite to showcase projects, technical skills, education, certifications, and professional information.",
     overview:
-      "A fast, modern developer showcase engineered with React.js, Vite, and Tailwind CSS. Built with responsive glassmorphism aesthetics, accessible UI tokens, smooth animations, and structured modular code.",
+      "A fast, modern developer showcase engineered with React.js, Vite, and Tailwind CSS. Built with the high-contrast Lato and charcoal/yellow editorial aesthetic, accessible UI tokens, smooth animations, and structured modular code.",
     keyFeatures: [
-      "Dark-mode first modern design with soft glowing accents",
-      "Interactive category filtering and dynamic modal detail views",
-      "Responsive hamburger drawer and desktop sticky navbar",
-      "Structured education timeline and verifiable certificate cards",
-      "SEO optimized metadata, Open Graph cards, and clean typography"
+      "High-contrast editorial design with charcoal #272729, sunny yellow #facf16, and orange #f24614",
+      "Trending-style category pill filter and dynamic modal detail views",
+      "Responsive hamburger drawer and desktop sticky navbar with yellow CTA",
+      "Structured education timeline and verifiable certificate cards with live viewer",
+      "SEO optimized metadata, Open Graph cards, and clean Lato typography"
     ],
-    technologies: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "JavaScript"],
+    technologies: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "JavaScript", "Lato Typography"],
     contribution: {
       role: "Sole Designer & Developer",
       highlights: [
         "Architected modular component hierarchy in React",
-        "Crafted custom Tailwind glassmorphism design tokens",
-        "Implemented accessible modal interactions and animations",
+        "Crafted custom editorial design system with Lato typography",
+        "Implemented accessible modal interactions and certificate previewers",
         "Wrote clean, extensible project data layers"
       ]
     },
-    githubUrl: "https://github.com/KURUTHI062", // Direct link to user's profile
+    githubUrl: "https://github.com/KURUTHI062",
     liveUrl: "#",
-    accentGradient: "from-emerald-500 via-teal-500 to-cyan-500",
-    glowColor: "rgba(16, 185, 129, 0.2)"
+    accentColor: "#facf16",
+    glowColor: "rgba(250, 207, 22, 0.2)"
   }
 ];
 
