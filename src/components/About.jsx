@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  GraduationCap, 
-  Code2, 
-  Layers, 
-  Lightbulb, 
-  Trophy, 
-  MapPin, 
-  Target, 
+import {
+  GraduationCap,
+  Code2,
+  Layers,
+  Lightbulb,
+  Trophy,
+  MapPin,
+  Target,
   Sparkles,
   CheckCircle2
 } from 'lucide-react';
@@ -54,7 +54,7 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-[#1e1e20] relative border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header - Editorial Style */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-4 border-b border-white/10">
           <div>
@@ -72,14 +72,14 @@ export default function About() {
 
         {/* Narrative & Career Objective Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
-          
+
           {/* Main Bio Paragraphs */}
           <div className="lg:col-span-7 space-y-6">
             <div className="editorial-card p-6 sm:p-8 rounded-sm space-y-5">
               <p className="text-slate-200 text-base sm:text-lg leading-relaxed">
                 I'm a dedicated and enthusiastic Computer Science and Engineering student passionate about software development and modern web technologies. I enjoy turning ideas into practical digital solutions and continuously improving my technical and problem-solving skills.
               </p>
-              
+
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
                 My current technical interests include <span className="text-[#facf16] font-bold">React.js, Vite, Python, Java, C,</span> and <span className="text-[#facf16] font-bold">SQL</span>. Through academic projects, hackathons, and personal projects, I am gaining practical experience in developing solutions for real-world problems.
               </p>
