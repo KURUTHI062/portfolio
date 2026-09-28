@@ -1,42 +1,47 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-const ThemeContext = createContext();
+const ThemeContext = createContext({
+  theme: 'dark',
+  toggleTheme: () => {},
+  isDark: true,
+});
 
-export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    if (savedTheme) {
-      return savedTheme === 'dark';
-    }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+export function ThemeProvider({ children }) {
+  const [theme, setTheme] = useState(() => {
+    // Default to dark theme as requested
+    const saved = localStorage.getItem('nk_portfolio_theme');
+    return saved ? saved : 'dark';
   });
 
   useEffect(() => {
     const root = document.documentElement;
-    if (isDarkMode) {
+    if (theme === 'dark') {
       root.classList.add('dark');
-      localStorage.setItem('portfolio-theme', 'dark');
+      root.classList.remove('light');
     } else {
       root.classList.remove('dark');
-      localStorage.setItem('portfolio-theme', 'light');
+      root.classList.add('light');
     }
-  }, [isDarkMode]);
+    localStorage.setItem('nk_portfolio_theme', theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setIsDarkMode((prev) => !prev);
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
+  const isDark = theme === 'dark';
+
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, isDark }}>
       {children}
     </ThemeContext.Provider>
   );
-};
+}
 
-export const useTheme = () => {
+export function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
     throw new Error('useTheme must be used within a ThemeProvider');
   }
   return context;
-};
+}

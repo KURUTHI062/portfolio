@@ -1,44 +1,5 @@
 export const projects = [
   {
-    id: "direct-bridge",
-    title: "Direct Bridge",
-    subtitle: "Student ↔ Skilled Labour Collaboration Platform",
-    category: "AI • Web Development • UI/UX",
-    filterCategories: ["All", "Web Development", "AI", "UI/UX"],
-    featured: true,
-    badge: "Featured Collaboration Platform",
-    description:
-      "An AI-powered collaborative platform designed to connect students with skilled workers for real-world prototype development and project collaboration.",
-    overview:
-      "Direct Bridge bridges the gap between students with theoretical concepts and skilled technical workers possessing hands-on practical fabrication expertise. It streamlines matchmaking, prototype development, and milestone-driven project workflows.",
-    keyFeatures: [
-      "Student and skilled-labour onboarding",
-      "Skill-based profile discovery",
-      "Project posting and specifications",
-      "AI-assisted skill matching",
-      "Collaboration workflow tracking",
-      "Real-time communication channels",
-      "Project-based connection management"
-    ],
-    technologies: ["React.js", "Next.js", "Tailwind CSS", "Supabase", "PostgreSQL", "AI"],
-    contribution: {
-      role: "Frontend / UI-UX Development",
-      highlights: [
-        "Designed the user interface and design system",
-        "Created responsive, high-performance layouts",
-        "Developed reusable modular frontend components",
-        "Designed student and skilled-labour interaction flows",
-        "Improved usability through ergonomic UX decisions",
-        "Maintained visual consistency across all viewports"
-      ],
-      note: "Focused on frontend engineering and UI/UX design. Backend and AI model architectures were handled by collaborating team members."
-    },
-    githubUrl: null, // Placeholder - do not invent
-    liveUrl: null,   // Placeholder
-    accentColor: "#f24614",
-    glowColor: "rgba(242, 70, 20, 0.25)"
-  },
-  {
     id: "insureflow-ai",
     title: "InsureFlow AI",
     altTitle: "ClaimGuard",
@@ -76,10 +37,52 @@ export const projects = [
       ],
       note: "Designed and implemented the complete frontend interface and UX dashboards. Core AI/ML models developed by specialized team members."
     },
-    githubUrl: null, // Placeholder - do not invent
-    liveUrl: null,   // Placeholder
-    accentColor: "#facf16",
-    glowColor: "rgba(250, 207, 22, 0.25)"
+    githubUrl: "https://github.com/Sasikumar-007/InsureFlow-AI",
+    cloneUrl: "https://github.com/Sasikumar-007/InsureFlow-AI.git",
+    liveUrl: null,
+    gradient: "from-blue-600 via-indigo-600 to-purple-600",
+    accentColor: "#3b82f6",
+    glowColor: "rgba(59, 130, 246, 0.35)"
+  },
+  {
+    id: "direct-bridge",
+    title: "Direct Bridge",
+    subtitle: "Student ↔ Skilled Labour Collaboration Platform",
+    category: "AI • Web Development • UI/UX",
+    filterCategories: ["All", "Web Development", "AI", "UI/UX"],
+    featured: true,
+    badge: "Featured Collaboration Platform",
+    description:
+      "An AI-powered collaborative platform designed to connect students with skilled workers for real-world prototype development and project collaboration.",
+    overview:
+      "Direct Bridge bridges the gap between students with theoretical concepts and skilled technical workers possessing hands-on practical fabrication expertise. It streamlines matchmaking, prototype development, and milestone-driven project workflows.",
+    keyFeatures: [
+      "Student and skilled-labour onboarding",
+      "Skill-based profile discovery",
+      "Project posting and specifications",
+      "AI-assisted skill matching",
+      "Collaboration workflow tracking",
+      "Real-time communication channels",
+      "Project-based connection management"
+    ],
+    technologies: ["React.js", "Next.js", "Tailwind CSS", "Supabase", "PostgreSQL", "AI"],
+    contribution: {
+      role: "Frontend / UI-UX Development",
+      highlights: [
+        "Designed the user interface and design system",
+        "Created responsive, high-performance layouts",
+        "Developed reusable modular frontend components",
+        "Designed student and skilled-labour interaction flows",
+        "Improved usability through ergonomic UX decisions",
+        "Maintained visual consistency across all viewports"
+      ],
+      note: "Focused on frontend engineering and UI/UX design. Backend and AI model architectures were handled by collaborating team members."
+    },
+    githubUrl: null, // Academic / private repository
+    liveUrl: null,
+    gradient: "from-purple-600 via-pink-600 to-rose-600",
+    accentColor: "#a855f7",
+    glowColor: "rgba(168, 85, 247, 0.35)"
   },
   {
     id: "career-adviser",
@@ -112,8 +115,9 @@ export const projects = [
     githubUrl: "https://github.com/KURUTHI062/Career-Adviser-",
     cloneUrl: "https://github.com/KURUTHI062/Career-Adviser-.git",
     liveUrl: null,
-    accentColor: "#f24614",
-    glowColor: "rgba(242, 70, 20, 0.2)"
+    gradient: "from-cyan-500 to-blue-600",
+    accentColor: "#06b6d4",
+    glowColor: "rgba(6, 182, 212, 0.35)"
   },
   {
     id: "examination-system",
@@ -147,8 +151,9 @@ export const projects = [
     githubUrl: "https://github.com/skyvlfuturesoft/skyvl_college_test.git",
     cloneUrl: "https://github.com/skyvlfuturesoft/skyvl_college_test.git",
     liveUrl: null,
-    accentColor: "#facf16",
-    glowColor: "rgba(250, 207, 22, 0.2)"
+    gradient: "from-pink-500 to-purple-600",
+    accentColor: "#ec4899",
+    glowColor: "rgba(236, 72, 153, 0.35)"
   },
   {
     id: "personal-portfolio",
@@ -161,28 +166,29 @@ export const projects = [
     description:
       "A responsive personal portfolio website developed using React.js and Vite to showcase projects, technical skills, education, certifications, and professional information.",
     overview:
-      "A fast, modern developer showcase engineered with React.js, Vite, and Tailwind CSS. Built with the high-contrast Lato and charcoal/yellow editorial aesthetic, accessible UI tokens, smooth animations, and structured modular code.",
+      "A fast, modern developer showcase engineered with React.js, Vite, and Tailwind CSS. Built with Electric Blue, Purple, Cyan, and Pink accents, glassmorphic cards, light/dark mode switcher, and structured modular code.",
     keyFeatures: [
-      "High-contrast editorial design with charcoal #272729, sunny yellow #facf16, and orange #f24614",
-      "Trending-style category pill filter and dynamic modal detail views",
-      "Responsive hamburger drawer and desktop sticky navbar with yellow CTA",
-      "Structured education timeline and verifiable certificate cards with live viewer",
-      "SEO optimized metadata, Open Graph cards, and clean Lato typography"
+      "Vibrant cyberpunk palette (Electric blue + purple + cyan + pink)",
+      "Interactive ☀️/🌙 theme toggle in navbar with smooth transition",
+      "Glassmorphic cards with subtle backdrop blur (#11182B)",
+      "Blue → purple gradient action buttons",
+      "Full replica of the authentic attached resume with live viewer and download"
     ],
-    technologies: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "JavaScript", "Lato Typography"],
+    technologies: ["React.js", "Vite", "Tailwind CSS", "Framer Motion", "JavaScript", "Theme Toggle"],
     contribution: {
       role: "Sole Designer & Developer",
       highlights: [
         "Architected modular component hierarchy in React",
-        "Crafted custom editorial design system with Lato typography",
+        "Crafted custom cyberpunk theme system with dark/light mode",
         "Implemented accessible modal interactions and certificate previewers",
         "Wrote clean, extensible project data layers"
       ]
     },
     githubUrl: "https://github.com/KURUTHI062",
     liveUrl: "#",
-    accentColor: "#facf16",
-    glowColor: "rgba(250, 207, 22, 0.2)"
+    gradient: "from-blue-600 to-cyan-500",
+    accentColor: "#38bdf8",
+    glowColor: "rgba(56, 189, 248, 0.35)"
   }
 ];
 
